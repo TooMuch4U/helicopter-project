@@ -1,25 +1,18 @@
-# ENCE361 'Helicopter' Project README
-# Group 'HeliFriAMGroup2'
-# Authors: Tom Rizzi, Euan Robinson, Satwik Meravanage
+# ENCE361 Helicopter Project
+An embedded systems project for the The TI Tiva C Series TM4C123G.
 
-Main file is 'main.c'. Support modules include:
-altitude.c - Support for returning altitude metrics
-buttons.c - Support for button-input controls of the helicopter
-circBufT.c - Support for storing altitude ADC readings into a circular buffer
-controls.c - Support for buttons and slider switch
-display.c - Support for the Orbit OLED display, and displaying helicopter metrics
-flightStates.c - Support for a finite state machine for different helicopter flight mides
-kernel.c - Support for round-robin execution of the program
-rotors.c - Support for main and tail rotor PWM control
-serial.c - Support for returning helicopter metrics via a serial comm
-slider.c - Support for Tiva slider switch
-timings.c - Support for a timer
-yaw.c - Support for returning yaw metrics
-tm4c123gh6pm_startup_ccs.c - TivaWare for Launchpad system
-ustdlib.c - Standard Texas Instruments function library
+## About
+### Goal
+The goal of this project was to program a remote controlled helicopter so that a “pilot” can fly a sortie, comprised of the following component tasks:
+- find a direction in which to take-off,
+- rise to an altitude where stable, manoeuvrable flight can be maintained,
+- rotate around a fixed position and over several incremental steps,
+- land back at base, “parking” in a home position.
 
-All source files are located in `Workspace/Week4Lab/`.
-Designated CCS workspace is `Workspace`.
+### Contributors
+- Tom Rizzi
+- Euan Robinson
+- Satwik Meravanage
 
 ## Checklist
 A shortened version of the project specification to be used as a checklist.
